@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorilla Energy Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a hred="#"> <img src="logo1.png" class="logo"> </a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Store</a></li>
+                <li> <a href="#">What's New</a></li>
+                <li> <a href="#">Newsletter</a></li>
+                <li> <a href="#">Contact</a></li>
+                </ul>
+                </header>
+                <div class="content">
+                    <div class="textBox">
+                        <h2> Go Ape with 
+
+                            <br><span> Energy!</span></h2>
+                        <P>
+                            GORILLA power, unleashed. Drink and rage! Bold flavor, crisp bubbles, iconic design. 
+                            Grab a can today and taste the difference!</P>
+                            <a href="#"> View All Products </a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="can1.png" class="pepsi">
+                    </div>
+                </div>
+                <ul class="thumb">
+                <li><img src="can1.png" onclick="imgSlider('can1.png');changeBgColor('#DAA520')"></li> 
+                <li><img src="can2.png" onclick="imgSlider('can2.png');changeBgColor('#e60c2c')"></li>    
+                <li><img src="can3.png" onclick="imgSlider('can3.png');changeBgColor('#000000')"></li>    
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"> <img src="facebook.png"></a>
+                        <li><a href="#"> <img src="instagram.png"></a>
+                            <li><a href="#"> <img src="twitter.png"></a>
+                    </ul>
+                </section>
+                <script type="text/javascript">
+                    function imgSlider(anything){
+                        document.querySelector('.pepsi').src = anything;
+                    }
+                        function changeBgColor(color){
+                            const sec = document.querySelector('.sec');
+                            sec.style.background = color;
+                        }
+
+                        function menuToggle(){
+                            const toggleMenu = document.querySelector('.toggleMenu');
+                            const navigation = document.querySelector('.navigation');
+                            toggleMenu.classList.toggle('active');
+                            navigation.classList.toggle('active');
+                        }
+                    
+                </script>
+                <section> <div class="card">
+                    <div class="circle"></div>
+                    <div class="content">
+                        
+                        <p> "GORILLA Muscle Whey Protein, bulk up in no time. 1 kilograms of powdered pure protein."  </p>
+                           <p> <a href="#">Buy Now</a> </p>
+                    </div>
+                    <img src="protein.png"> 
+                </div>
+                <div class="content2">
+                    <div class="textBox2">
+                        <h2> Packed with protein,
+
+                            <br><span>  ready to go ape!</span></h2>
+                        <P>
+                            GORILLA power, unleashed. Drink and rage! </P>
+                            <p>Bold flavor, crisp bubbles, iconic design. </P>
+                            <p> Grab a can today and taste the difference!</P>
+                            <a href="#"> View More Products </a>
+                    </div>
+                    <ul class="sci2">
+                        <li><a href="#"> <img src="facebook.png"></a>
+                            <li><a href="#"> <img src="instagram.png"></a>
+                                <li><a href="#"> <img src="twitter.png"></a>
+                        </ul>
+                    </section>
+               
+                 
+                
+                
+</body>
+</html>
